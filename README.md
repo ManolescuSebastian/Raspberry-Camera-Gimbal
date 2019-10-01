@@ -5,7 +5,32 @@ This project contains the code required to move stepper motors and stream video.
 
 ![alt text](https://github.com/ManolescuSebastian/Raspberry-Camera-Gimbal/blob/master/images/20190930_135807.jpg)
 
+The main API endpoints for this projects are for camera movement and video stream </br>
 
+**/api/servo** with query params </br>
+
+- move=up
+- move=down
+- move=right
+- move down
+- move = stop
+
+**/stream.mjpg**  </br>
+This endpoint is used for video streaming.
+
+But we also have another option for video streaming that is more faster/better video quality </br>
+In stream_server (https://github.com/ManolescuSebastian/Raspberry-Camera-Gimbal/tree/master/CameraGimbal/stream_server) we have the a standalone server that requires to run on a **different port**. </br>
+More information here: https://picamera.readthedocs.io/en/release-1.10/recipes1.html
+
+### How to start
+In order to start the server first we need to add a **base URL** in MainApp.py (or CameraStream.py if you are using the streaming server). <br>
+To find out your Raspberry Pi IP open a terminal and type ifconfig (192.168.1.X)<br>
+Add rapspberry IP to MainApp.py in the last code line (e.q. app.run(debug=True, port=5050, **host='192.168.1. todo'**,threaded=True)) or/and if you are using CameraStream.py add it to  address = (**'192.168.1.todo'**, 5020) <br>
+
+**Note:** You can add any port you want (5050, 5020) was a personal choice.<br>
+
+After the steps above are completed open a terminal and type<br>
+**python MainApp.py** or/and **python CameraStream.py**
 
 ### Required components
 
