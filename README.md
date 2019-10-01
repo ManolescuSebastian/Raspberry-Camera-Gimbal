@@ -1,6 +1,6 @@
 # Raspberry-Camera-Gimbal
 
-This project contains the code required to move stepper motors and stream video.
+Raspberry Pi API project that provides two video streaming options and stepper motor movement 360° rotation.
 
 
 ![alt text](https://github.com/ManolescuSebastian/Raspberry-Camera-Gimbal/blob/master/images/20190930_135807.jpg)
@@ -30,7 +30,10 @@ Add rapspberry IP to MainApp.py in the last code line (e.q. app.run(debug=True, 
 **Note:** You can add any port you want (5050, 5020) was a personal choice.<br>
 
 After the steps above are completed open a terminal and type<br>
-**python MainApp.py** or/and **python CameraStream.py**
+**python MainApp.py** or/and **python CameraStream.py** <br>
+
+### Libraries required in order to run this project
+Flask (https://pypi.org/project/Flask/)
 
 ### Required components
 
