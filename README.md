@@ -2,7 +2,10 @@
 
 This project contains the code required to move stepper motors and stream video.
 
-![alt text](https://github.com/ManolescuSebastian/Raspberry-Camera-Gimbal/images/20190930_135807.jpg)
+
+![alt text](https://github.com/ManolescuSebastian/Raspberry-Camera-Gimbal/blob/master/images/20190930_135807.jpg)
+
+
 
 ### Required components
 
