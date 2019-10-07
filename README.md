@@ -66,6 +66,13 @@ GND | GND
 
 </br></br>
 
+### Schematic
+</br>
+<img src="https://github.com/ManolescuSebastian/Raspberry-Camera-Gimbal/blob/master/images/camera_gimbal_schematic_bb_50.jpg" width="500">
+</br>
+
+[Schematic created using Fritzing](http://fritzing.org/home/ "http://fritzing.org")
+
     Copyright 2019
 
     Licensed under the Apache License, Version 2.0 (the "License");
