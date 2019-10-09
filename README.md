@@ -7,7 +7,7 @@ Raspberry Pi API project that provides two video streaming options and stepper m
 
 The main API endpoints for this projects are for camera movement and video stream </br>
 
-**/api/servo** with query params </br>
+**/api/stepper** with query params </br>
 
 - move=up
 - move=down
