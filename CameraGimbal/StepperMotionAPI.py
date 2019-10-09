@@ -1,4 +1,4 @@
-import ServoMotion
+import StepperMotion
 from time import sleep
 
 from flask import json
@@ -7,32 +7,32 @@ from flask import Flask, request, render_template
 from flask_restful import Resource, Api
 from flask import Response
 
-class ServoMotionAPI(Resource):
+class StepperMotionAPI(Resource):
     def get(self):
         arg = request.args['move']
         if(arg == "up"):
-            ServoMotion.moveUp()
+            StepperMotion.moveUp()
             return jsonify(
                 status = 200,
                 movement = 'up')
             return response
         elif(arg == "down"):
-            ServoMotion.moveDown()
+            StepperMotion.moveDown()
             return jsonify(
                 status = 200,
                 movement = 'down')
         elif(arg == "left"):
-            ServoMotion.moveLeft()
+            StepperMotion.moveLeft()
             return jsonify(
                 status = 200,
                 movement = 'left')
         elif(arg == "right"):
-            ServoMotion.moveRight()
+            StepperMotion.moveRight()
             return jsonify(
                 status = 200,
                 movement = 'right')
         elif(arg == 'stop'):
-            ServoMotion.stopMovement()
+            StepperMotion.stopMovement()
             return jsonify(
                 status = 200,
                 movement = 'stop')

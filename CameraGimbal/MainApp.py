@@ -1,13 +1,13 @@
 from time import sleep
 from flask import Flask, request, render_template
 from flask_restful import Resource, Api
-from ServoMotionAPI import ServoMotionAPI
+from StepperMotionAPI import StepperMotionAPI
 from camera_pi import Camera
 
 app = Flask(__name__)
 api = Api(app)
 
-servoApi = ServoMotionAPI
+stepperApi = StepperMotionAPI
 
 #default web page
 @app.route('/')
@@ -30,7 +30,7 @@ def video_feed():
 
 
 #API requests mapping
-api.add_resource(servoApi, '/api/servo')
+api.add_resource(stepperApi, '/api/stepper')
                         
 if __name__ == '__main__':
     app.run(debug=True, port=5050, host='192.168.1.9',threaded=True)

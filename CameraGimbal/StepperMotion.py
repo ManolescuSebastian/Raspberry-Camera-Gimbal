@@ -32,7 +32,7 @@ def resetAllPins():
 
 
 ### Define motion
-def moveLeft():
+def moveRight():
     for i in range(32):
          for halfstep in range(8):
                 for pin in range(4):
@@ -40,7 +40,7 @@ def moveLeft():
                         time.sleep(0.001)
     resetAllPins()
     
-def moveRight():
+def moveLeft():
     for i in range(32):
          for halfstep in reversed(range(8)):
                 for pin in reversed(range(4)):
@@ -64,7 +64,7 @@ def moveDown():
                         time.sleep(0.001)
     resetAllPins()
 
-#We need to reset the pins after each action so that we don't keep the servo motors under load
+#We need to reset the pins after each action so that we don't keep the stepper motors under load
 
 #Set all pins in default mode
 def stopMovement():
