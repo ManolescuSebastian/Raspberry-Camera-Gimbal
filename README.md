@@ -9,10 +9,10 @@ The main API endpoints for this projects are for camera movement and video strea
 
 **/api/stepper** with query params </br>
 
-- move=up
-- move=down
-- move=right
-- move down
+- move = up
+- move = down
+- move = right
+- move = down
 - move = stop
 
 **/stream.mjpg**  </br>
