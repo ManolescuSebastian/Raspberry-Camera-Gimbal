@@ -1,9 +1,10 @@
 # Raspberry-Camera-Gimbal
 
-Raspberry Pi API project that provides two video streaming options and stepper motor movement 360° rotation.
+Raspberry Pi API project that provides two video streaming options and stepper motor movement 360° rotation.</br>
 
+**Youtube video:**
 
-![alt text](https://github.com/ManolescuSebastian/Raspberry-Camera-Gimbal/blob/master/images/20190930_135807.jpg)
+[![Raspberry pi camera gimbal](http://img.youtube.com/vi/GQbLwBo25KM/0.jpg)](http://www.youtube.com/watch?v=GQbLwBo25KM "Raspberry pi camera gimbal")
 
 The main API endpoints for this projects are for camera movement and video stream </br>
 
