@@ -4,7 +4,7 @@ Raspberry Pi API project that provides two video streaming options and stepper m
 
 Demo
 -----
-<img src="https://github.com/ManolescuSebastian/Raspberry-Camera-Gimbal/blob/master/images/Raspberry_Camera_Gimbal.gif" width="80%"></img>
+<img src="https://github.com/ManolescuSebastian/Raspberry-Camera-Gimbal/blob/master/images/Raspberry_Camera_Gimbal.gif" width="50%"></img>
 
 
 **Full Youtube video:**
@@ -44,7 +44,8 @@ After the steps above are completed open a terminal and type<br>
 ### Libraries required in order to run this project
 Flask (https://pypi.org/project/Flask/)
 
-### Required components
+Required components
+------
 
 - Raspberry pi
 - Raspberry pi camera
@@ -54,7 +55,8 @@ Flask (https://pypi.org/project/Flask/)
 - M3 screws (M3 * 8 , M3 * 12, M3 * 16)
 - M2 screws (M2 * 6 - or M2 * 8)
 
-### Pinout connection
+Pinout connection
+-----
 Raspberry pi | ULN2003 Driver Board (1)
 ------------ | -------------
 GPIO21 | IN1
@@ -75,12 +77,15 @@ GND | GND
 
 </br></br>
 
-### Schematic
-</br>
+Schematic
+-----
 <img src="https://github.com/ManolescuSebastian/Raspberry-Camera-Gimbal/blob/master/images/camera_gimbal_schematic_bb_50.jpg" width="500">
 </br>
 
 [Schematic created using Fritzing](http://fritzing.org/home/ "http://fritzing.org")
+
+License
+-----
 
     Copyright 2019
 
